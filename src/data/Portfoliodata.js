@@ -2,14 +2,13 @@
  * Copyright (c) 2026 Your Company Name
  * All rights reserved.
  */
-
 export const profile = {
     name: "Estefanía Julieta Campisi",
-    role: "Perfil IT Jr | Desarrollo Web | Análisis de Procesos",
+    role: "Desarrolladora Frontend Jr | React · JavaScript · Node.js",
     subtitle:
-      "Estudiante de Sistemas | JavaScript, React, Node.js, APIs REST",
+      "Estudiante de Sistemas | Interfaces web, APIs REST y lógica de negocio",
     heroText:
-      "Soy estudiante de Sistemas con formación en desarrollo web (JavaScript, React y Node.js) y experiencia en gestión administrativa y comercial. Tengo capacidad para desenvolverme en entornos dinámicos, organizar procesos y resolver problemas de forma eficiente. Cuento con experiencia en el desarrollo de aplicaciones web, trabajando con consumo de APIs y manejo de datos. Busco mi primera oportunidad en IT en roles Trainee o Junior, donde pueda seguir creciendo y aportar valor.",
+      "Soy estudiante de Sistemas con formación en desarrollo web, enfocada en JavaScript, React y base backend con Node.js. Vengo construyendo proyectos web con consumo de APIs, organización de datos y desarrollo de interfaces claras, funcionales y responsive. Además, cuento con experiencia en gestión administrativa y comercial, lo que me aporta una mirada práctica del negocio, orden de procesos y resolución de problemas. Busco mi primera oportunidad en IT para seguir creciendo, sumar experiencia real y aportar valor a un equipo.",
     email: "estefania.campisi@gmail.com",
     phone: "+54 9 11 3946-6290",
     location: "Buenos Aires, Argentina",
@@ -19,20 +18,20 @@ export const profile = {
   };
   
   export const stats = [
-    { value: "JavaScript", label: "Desarrollo frontend" },
-    { value: "React", label: "Componentes y UI" },
-    { value: "Node.js", label: "Base backend" },
-    { value: "APIs REST", label: "Consumo y datos" },
+    { value: "React", label: "SPAs y componentes" },
+    { value: "JavaScript", label: "Lógica e interacción" },
+    { value: "APIs REST", label: "Consumo y manejo de datos" },
+    { value: "Git/GitHub", label: "Versionado y deploy" },
   ];
   
   export const skillGroups = [
     {
-      title: "Desarrollo Web",
+      title: "Desarrollo Frontend",
       skills: [
-        { name: "JavaScript", level: 80 },
-        { name: "HTML", level: 90 },
+        { name: "JavaScript", level: 82 },
+        { name: "HTML", level: 92 },
         { name: "CSS", level: 88 },
-        { name: "React", level: 76 },
+        { name: "React", level: 78 },
         { name: "Context API", level: 68 },
       ],
     },
@@ -49,11 +48,11 @@ export const profile = {
     {
       title: "Herramientas",
       skills: [
-        { name: "Git", level: 78 },
-        { name: "GitHub", level: 82 },
+        { name: "Git", level: 80 },
+        { name: "GitHub", level: 84 },
         { name: "Postman", level: 74 },
-        { name: "VS Code", level: 90 },
-        { name: "Debugging", level: 76 },
+        { name: "VS Code", level: 92 },
+        { name: "Debugging", level: 78 },
       ],
     },
   ];
@@ -61,111 +60,111 @@ export const profile = {
   export const aboutCards = [
     {
       icon: "bi bi-person-badge",
-      title: "Quién soy",
-      text: "Soy estudiante de Sistemas con formación en desarrollo web y experiencia en gestión administrativa y comercial. Me adapto bien a entornos dinámicos y trabajo con foco en organización, resolución de problemas y mejora de procesos.",
+      title: "Perfil",
+      text: "Soy estudiante de Sistemas con formación en desarrollo web y experiencia previa en gestión administrativa y comercial. Me destaco por mi organización, capacidad de adaptación y resolución práctica de problemas.",
     },
     {
       icon: "bi bi-code-slash",
-      title: "Qué hago",
-      text: "Desarrollo proyectos web con JavaScript, React y Node.js, trabajando con consumo de APIs, manejo de datos y construcción de interfaces claras y funcionales.",
+      title: "En qué trabajo",
+      text: "Desarrollo interfaces web con JavaScript y React, integrando consumo de APIs, manejo de datos y buenas prácticas de estructura para construir experiencias funcionales y claras.",
     },
     {
       icon: "bi bi-stars",
-      title: "Mi diferencial",
-      text: "Combino base técnica con experiencia real en organización, atención, análisis y operación comercial. Eso me permite aportar una mirada práctica del negocio además del desarrollo.",
+      title: "Valor que aporto",
+      text: "Combino base técnica con experiencia real en procesos, atención y operación comercial. Eso me permite entender tanto la parte de desarrollo como la lógica del negocio.",
     },
   ];
   
   export const education = [
     {
       title: "Licenciatura en Sistemas",
-      place: "UNLa",
+      place: "Universidad Nacional de Lanús (UNLa)",
       date: "En curso",
       description:
-        "Formación universitaria en sistemas, lógica, algoritmos y resolución de problemas aplicada al desarrollo de software.",
+        "Formación universitaria orientada a lógica, algoritmos, resolución de problemas y fundamentos del desarrollo de software.",
     },
   ];
   
   export const training = [
     {
       title: "Full Stack",
-      place: "Oracle / Alura",
+      place: "Oracle Next Education / Alura",
       date: "Finalizado",
       description:
-        "Formación en desarrollo web con foco en frontend, backend y fundamentos prácticos de construcción de aplicaciones.",
+        "Formación práctica en desarrollo web frontend y backend, con foco en lógica, estructura de aplicaciones y construcción de proyectos.",
     },
     {
       title: "React",
       place: "Talento Tech",
       date: "Finalizado",
       description:
-        "Desarrollo de interfaces modernas con componentes, manejo de estado, props y consumo de APIs.",
+        "Desarrollo de interfaces modernas con componentes, props, manejo de estado y organización de aplicaciones SPA.",
     },
     {
       title: "Node.js",
       place: "Formación complementaria",
       date: "Finalizado",
       description:
-        "Base de backend, estructura de servidor, manejo de rutas y lógica del lado del servidor.",
+        "Base backend con servidores, rutas, lógica del lado del servidor y estructura inicial de APIs.",
     },
     {
       title: "Java",
       place: "Formación complementaria",
       date: "En curso",
       description:
-        "Continuidad de aprendizaje orientada a lógica, programación orientada a objetos y crecimiento técnico.",
+        "Aprendizaje orientado a lógica, programación orientada a objetos y crecimiento técnico a mediano plazo.",
     },
     {
       title: "Excel intermedio",
       place: "Formación complementaria",
       date: "Finalizado",
       description:
-        "Herramienta aplicada a organización, gestión de datos y tareas operativas.",
+        "Herramienta aplicada a organización, análisis de datos y tareas operativas.",
     },
   ];
   
   export const experience = [
     {
       title: "Emprendimiento propio",
-      place: "Gestión comercial",
+      place: "Gestión comercial y operativa",
       date: "2020 - Actualidad",
       description:
-        "Gestión integral del negocio, incluyendo ventas, control de stock, proveedores y logística. Análisis de precios, costos y márgenes para la toma de decisiones. Publicación de productos en plataformas digitales y seguimiento de clientes. Organización de procesos operativos y resolución de incidencias para optimizar la gestión y eficiencia del negocio.",
+        "Gestión integral del negocio: ventas, stock, proveedores, logística, análisis de precios y atención al cliente. Organización de procesos, resolución de incidencias y toma de decisiones basada en costos, márgenes y operación.",
     },
     {
-      title: "Daniel Goytia Services S.A",
+      title: "Daniel Goytia Services S.A.",
       place: "Análisis y administración",
       date: "2017 - 2020",
       description:
-        "Análisis crediticio, conciliaciones bancarias, gestión de cobranzas, facturación y control financiero.",
+        "Análisis crediticio, conciliaciones bancarias, cobranzas, facturación y control financiero, con foco en orden, seguimiento y precisión operativa.",
     },
     {
-      title: "CMR Falabella S.A",
+      title: "CMR Falabella S.A.",
       place: "Gestión de cuentas",
       date: "2017",
       description:
-        "Gestión de cuentas, resolución de incidencias y análisis de casos con generación de reportes.",
+        "Gestión de cuentas, resolución de incidencias y análisis de casos con elaboración de reportes y seguimiento administrativo.",
     },
     {
       title: "Experiencia internacional",
       place: "Administración y atención comercial | Italia",
       date: "2016",
       description:
-        "Gestión de documentación, atención al cliente, coordinación de tareas operativas y soporte en procesos internos. Desarrollo de habilidades de adaptación, organización y trabajo en entornos dinámicos.",
+        "Atención al cliente, gestión documental y coordinación de tareas operativas en un entorno dinámico, fortaleciendo adaptación, autonomía y organización.",
     },
     {
-      title: "GEFCO Argentina S.A",
+      title: "GEFCO Argentina S.A.",
       place: "Soporte administrativo",
       date: "2012 - 2016",
       description:
-        "Soporte administrativo, coordinación de agendas y comunicación con clientes y proveedores.",
+        "Soporte administrativo, coordinación de agendas y comunicación con clientes y proveedores en tareas de seguimiento y operación diaria.",
     },
     {
-      title: "Fiat Moena S.A",
+      title: "Fiat Moena S.A.",
       place: "Recepción y soporte administrativo",
       date: "2010 - 2012",
       description:
-        "Recepción, soporte administrativo, gestión de documentación, envíos y atención al cliente.",
+        "Recepción, gestión de documentación, atención al cliente y soporte administrativo general.",
     },
   ];
   
@@ -178,13 +177,55 @@ export const profile = {
   export const projects = [
     {
       id: 1,
+      title: "Portfolio Profesional",
+      category: "React",
+      icon: "bi bi-window-stack",
+      shortDescription:
+        "Portfolio desarrollado con React y Vite para presentar perfil profesional, stack técnico, experiencia, formación y proyectos.",
+      summary:
+        "Aplicación SPA orientada a marca personal profesional, con estructura por secciones, navegación clara, filtrado de proyectos, diseño responsive y despliegue en Vercel.",
+      role: "Diseño, desarrollo frontend y deploy",
+      tech: ["React", "JavaScript", "CSS", "Vite", "Vercel"],
+      github: "https://github.com/estefacamp/portfolio-react-vite",
+      liveUrl: "https://portfolio-react-vite-lake.vercel.app/",
+      image: "",
+      features: [
+        "SPA con React y Vite",
+        "Diseño responsive",
+        "Filtrado de proyectos",
+        "Deploy en Vercel",
+      ],
+    },
+    {
+      id: 2,
+      title: "Proyecto React - Talento Tech",
+      category: "React",
+      icon: "bi bi-filetype-jsx",
+      shortDescription:
+        "Proyecto académico desarrollado con React para reforzar componentización, estructura de interfaz y organización del frontend.",
+      summary:
+        "Trabajo enfocado en consolidar fundamentos de React, separación por componentes, reutilización de UI y construcción de una experiencia ordenada y funcional.",
+      role: "Desarrollo frontend",
+      tech: ["React", "JavaScript", "CSS"],
+      github: "https://github.com/estefacamp/talentotechproyecto",
+      liveUrl: "https://estefacamp.github.io/talentotechproyecto/",
+      image: "",
+      features: [
+        "Componentización",
+        "Organización del frontend",
+        "Diseño responsive",
+        "Proyecto académico práctico",
+      ],
+    },
+    {
+      id: 3,
       title: "Encripta Texto",
       category: "JavaScript",
       icon: "bi bi-shield-lock",
       shortDescription:
-        "Aplicación web desarrollada con JavaScript para trabajar lógica del cliente, interacción del usuario y manipulación de texto.",
+        "Aplicación web desarrollada con JavaScript para trabajar lógica del cliente, interacción del usuario y transformación de texto.",
       summary:
-        "Proyecto orientado a reforzar lógica en JavaScript, eventos, validaciones y transformación dinámica de texto dentro de una interfaz simple y funcional.",
+        "Proyecto orientado a reforzar lógica en JavaScript, eventos, validaciones y manipulación dinámica del DOM a través de una interfaz simple y funcional.",
       role: "Desarrollo frontend",
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/estefacamp/ENCRIPTATEXTO",
@@ -192,41 +233,20 @@ export const profile = {
       image: "",
       features: [
         "Manipulación de texto",
-        "Interacción con el usuario",
-        "Lógica en JavaScript",
-        "Diseño funcional",
-      ],
-    },
-    {
-      id: 2,
-      title: "Alura Midi",
-      category: "JavaScript",
-      icon: "bi bi-music-note-beamed",
-      shortDescription:
-        "Proyecto interactivo desarrollado con JavaScript para practicar eventos, sonidos y comportamiento dinámico en el navegador.",
-      summary:
-        "Trabajo enfocado en reforzar lógica del cliente, escucha de eventos y respuesta visual/sonora del sistema a partir de acciones del usuario.",
-      role: "Desarrollo frontend",
-      tech: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/estefacamp/Aluramidi",
-      liveUrl: "https://estefacamp.github.io/Aluramidi/",
-      image: "",
-      features: [
         "Eventos del usuario",
-        "Interacción dinámica",
-        "Reproducción de sonidos",
         "Lógica en JavaScript",
+        "Interfaz funcional",
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Juego Pong",
       category: "JavaScript",
       icon: "bi bi-controller",
       shortDescription:
         "Juego web realizado con JavaScript para practicar lógica, movimiento de elementos e interacción en pantalla.",
       summary:
-        "Proyecto de práctica enfocado en animación, control de elementos, dinámica de juego y resolución lógica en el navegador.",
+        "Proyecto de práctica orientado a reforzar animación, control de estados, interacción del usuario y lógica de juego en navegador.",
       role: "Desarrollo frontend",
       tech: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/estefacamp/juegopong",
@@ -240,43 +260,43 @@ export const profile = {
       ],
     },
     {
-      id: 4,
-      title: "Talento Tech Proyecto",
-      category: "React",
-      icon: "bi bi-filetype-jsx",
+      id: 5,
+      title: "Alura Midi",
+      category: "JavaScript",
+      icon: "bi bi-music-note-beamed",
       shortDescription:
-        "Proyecto desarrollado en el marco de Talento Tech, orientado a reforzar estructura, componentes y organización del frontend.",
+        "Proyecto interactivo desarrollado con JavaScript para practicar eventos, sonido y comportamiento dinámico en el navegador.",
       summary:
-        "Trabajo enfocado en consolidar conocimientos de desarrollo web moderno, organización de interfaz y construcción de una experiencia clara y funcional.",
+        "Trabajo enfocado en escucha de eventos, respuesta visual/sonora y manejo de interacción del usuario a través del DOM.",
       role: "Desarrollo frontend",
-      tech: ["React", "JavaScript", "CSS"],
-      github: "https://github.com/estefacamp/talentotechproyecto",
-      liveUrl: "https://estefacamp.github.io/talentotechproyecto/",
+      tech: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/estefacamp/Aluramidi",
+      liveUrl: "https://estefacamp.github.io/Aluramidi/",
       image: "",
       features: [
-        "Estructura de interfaz",
-        "Organización del frontend",
-        "Diseño responsive",
-        "Proyecto académico/práctico",
+        "Eventos del usuario",
+        "Interacción dinámica",
+        "Reproducción de sonidos",
+        "Manejo del DOM",
       ],
     },
     {
-      id: 5,
+      id: 6,
       title: "Geek Alura",
       category: "HTML/CSS",
       icon: "bi bi-code-slash",
       shortDescription:
-        "Proyecto de maquetación y presentación visual enfocado en estructura clara, diseño y adaptación responsive.",
+        "Proyecto de maquetación enfocado en estructura visual, jerarquía de contenidos y adaptación responsive.",
       summary:
-        "Desarrollo orientado a reforzar jerarquía visual, orden de contenidos y buenas prácticas de maquetación en una interfaz web.",
-      role: "Diseño visual y maquetación frontend",
+        "Desarrollo orientado a reforzar maquetación web, orden visual, buenas prácticas de estructura y presentación clara de contenido.",
+      role: "Maquetación frontend",
       tech: ["HTML", "CSS"],
       github: "https://github.com/estefacamp/geekalura",
       liveUrl: "https://estefacamp.github.io/geekalura/",
       image: "",
       features: [
         "Maquetación web",
-        "Diseño visual claro",
+        "Jerarquía visual",
         "Adaptación responsive",
         "Buenas prácticas de estructura",
       ],
