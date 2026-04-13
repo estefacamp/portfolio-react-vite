@@ -60,7 +60,7 @@ function Hero({ profile, stats }) {
 
         <div className="hero-visual reveal w-100">
           <div className="row g-3 align-items-start w-100">
-            <div className="col-12 col-md-4">
+            <div className="col-4">
               <div className="d-flex flex-column gap-3">
                 <div
                   className="card border-0 shadow-lg overflow-hidden"
@@ -93,7 +93,7 @@ function Hero({ profile, stats }) {
                   }}
                 >
                   <div className="card-body p-3 text-center text-white">
-                    <div className="d-flex justify-content-center gap-2 mb-2">
+                    <div className="d-flex justify-content-center gap-2 mb-2 flex-wrap">
                       <a
                         href={profile.linkedin}
                         target="_blank"
@@ -135,7 +135,7 @@ function Hero({ profile, stats }) {
               </div>
             </div>
 
-            <div className="col-12 col-md-8">
+            <div className="col-8">
               <div
                 className="card border-0 shadow-lg h-100"
                 style={{
@@ -178,7 +178,25 @@ function Hero({ profile, stats }) {
                       {profile.email}
                     </a>
 
-                    
+                    <a
+                      href={profile.linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-decoration-none text-white rounded-4 px-3 py-2 bg-dark bg-opacity-25 border border-light border-opacity-10"
+                    >
+                      <i className="bi bi-linkedin me-2"></i>
+                      LinkedIn
+                    </a>
+
+                    <a
+                      href={profile.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-decoration-none text-white rounded-4 px-3 py-2 bg-dark bg-opacity-25 border border-light border-opacity-10"
+                    >
+                      <i className="bi bi-github me-2"></i>
+                      GitHub
+                    </a>
                   </div>
                 </div>
               </div>
@@ -190,4 +208,4 @@ function Hero({ profile, stats }) {
   );
 }
 
-export default Hero;
+export default Hero;  
