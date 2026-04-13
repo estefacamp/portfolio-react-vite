@@ -1,4 +1,5 @@
 import { useState } from "react";
+import campisiPhoto from "../assets/campisi.jpg";
 
 function Hero({ profile, stats }) {
   const [copied, setCopied] = useState(false);
@@ -23,8 +24,8 @@ function Hero({ profile, stats }) {
           <span className="eyebrow">{profile.role}</span>
 
           <h1>
-            Construyo experiencias web claras, funcionales y
-            <span> orientadas a resolver problemas reales.</span>
+            {profile.name}
+            <span> {profile.subtitle}</span>
           </h1>
 
           <p className="hero-text">{profile.heroText}</p>
@@ -57,33 +58,130 @@ function Hero({ profile, stats }) {
           </div>
         </div>
 
-        <div className="hero-visual reveal">
-          <div className="profile-card">
-            <div className="profile-image-wrap">
-              <img src="/img/campisi.png" alt={profile.name} />
+        <div className="hero-visual reveal w-100">
+          <div className="row g-3 align-items-start w-100">
+            <div className="col-12 col-md-4">
+              <div className="d-flex flex-column gap-3">
+                <div
+                  className="card border-0 shadow-lg overflow-hidden"
+                  style={{
+                    background: "rgba(9, 20, 40, 0.88)",
+                    backdropFilter: "blur(10px)",
+                    borderRadius: "22px",
+                  }}
+                >
+                  <img
+                    src={campisiPhoto}
+                    alt={`Foto de ${profile.name}`}
+                    className="img-fluid"
+                    style={{
+                      width: "100%",
+                      height: "260px",
+                      objectFit: "cover",
+                      objectPosition: "center top",
+                      display: "block",
+                    }}
+                  />
+                </div>
+
+                <div
+                  className="card border-0 shadow-lg"
+                  style={{
+                    background: "rgba(9, 20, 40, 0.88)",
+                    backdropFilter: "blur(10px)",
+                    borderRadius: "22px",
+                  }}
+                >
+                  <div className="card-body p-3 text-center text-white">
+                    <div className="d-flex justify-content-center gap-2 mb-2">
+                      <a
+                        href={profile.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="LinkedIn"
+                        className="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+                        style={{ width: "42px", height: "42px" }}
+                      >
+                        <i className="bi bi-linkedin"></i>
+                      </a>
+
+                      <a
+                        href={profile.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="GitHub"
+                        className="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+                        style={{ width: "42px", height: "42px" }}
+                      >
+                        <i className="bi bi-github"></i>
+                      </a>
+
+                      <button
+                        onClick={handleCopyEmail}
+                        className="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+                        aria-label="Copiar email"
+                        type="button"
+                        style={{ width: "42px", height: "42px" }}
+                      >
+                        <i className="bi bi-envelope"></i>
+                      </button>
+                    </div>
+
+                    {copied && (
+                      <small className="d-block text-info">Mail copiado</small>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="floating-tag tag-1">UI limpia</div>
-            <div className="floating-tag tag-2">Responsive</div>
-            <div className="floating-tag tag-3">IT Jr</div>
+            <div className="col-12 col-md-8">
+              <div
+                className="card border-0 shadow-lg h-100"
+                style={{
+                  background: "rgba(9, 20, 40, 0.88)",
+                  backdropFilter: "blur(10px)",
+                  borderRadius: "22px",
+                }}
+              >
+                <div className="card-body p-4 text-white">
+                  <span className="badge rounded-pill text-bg-light text-dark mb-3">
+                    Disponible para roles Jr / Trainee
+                  </span>
 
-            <div className="profile-info">
-              <h3>{profile.name}</h3>
-              <p>{profile.role}</p>
+                  <h3 className="h5 mb-1">{profile.name}</h3>
+                  <p className="mb-3 text-white-50">{profile.location}</p>
 
-              <div className="social-row">
-                <a href={profile.linkedin} target="_blank" rel="noreferrer">
-                  <i className="bi bi-linkedin"></i>
-                </a>
-                <a href={profile.github} target="_blank" rel="noreferrer">
-                  <i className="bi bi-github"></i>
-                </a>
-                <button onClick={handleCopyEmail} className="social-mail-btn">
-                  <i className="bi bi-envelope"></i>
-                </button>
+                  <div className="d-flex flex-column gap-2 mb-3">
+                    <div className="rounded-4 px-3 py-2 bg-dark bg-opacity-25 border border-light border-opacity-10">
+                      <i className="bi bi-code-square me-2"></i>
+                      Frontend con React y JavaScript
+                    </div>
+
+                    <div className="rounded-4 px-3 py-2 bg-dark bg-opacity-25 border border-light border-opacity-10">
+                      <i className="bi bi-database me-2"></i>
+                      Base backend con Node.js y APIs REST
+                    </div>
+
+                    <div className="rounded-4 px-3 py-2 bg-dark bg-opacity-25 border border-light border-opacity-10">
+                      <i className="bi bi-briefcase me-2"></i>
+                      Experiencia en gestión y análisis de procesos
+                    </div>
+                  </div>
+
+                  <div className="d-flex flex-column gap-2">
+                    <a
+                      href={`mailto:${profile.email}`}
+                      className="text-decoration-none text-white rounded-4 px-3 py-2 bg-dark bg-opacity-25 border border-light border-opacity-10"
+                    >
+                      <i className="bi bi-envelope me-2"></i>
+                      {profile.email}
+                    </a>
+
+                    
+                  </div>
+                </div>
               </div>
-
-              {copied && <small className="copy-feedback">Mail copiado</small>}
             </div>
           </div>
         </div>
