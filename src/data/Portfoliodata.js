@@ -26,36 +26,33 @@ export const profile = {
   
   export const skillGroups = [
     {
-      title: "Desarrollo Frontend",
-      skills: [
-        { name: "JavaScript", level: 82 },
-        { name: "HTML", level: 92 },
-        { name: "CSS", level: 88 },
-        { name: "React", level: 78 },
-        { name: "Context API", level: 68 },
-      ],
+      title: "Frontend",
+      icon: "bi bi-window",
+      skills: ["HTML", "CSS", "JavaScript", "React", "Bootstrap", "Context API"],
     },
     {
-      title: "Backend y datos",
-      skills: [
-        { name: "Node.js", level: 70 },
-        { name: "Express", level: 68 },
-        { name: "Firebase", level: 72 },
-        { name: "APIs REST", level: 82 },
-        { name: "HTTP / JSON / CRUD", level: 80 },
-      ],
+      title: "Backend y APIs",
+      icon: "bi bi-server",
+      skills: ["Node.js", "Express", "Firebase", "APIs REST"],
     },
     {
-      title: "Herramientas",
-      skills: [
-        { name: "Git", level: 80 },
-        { name: "GitHub", level: 84 },
-        { name: "Postman", level: 74 },
-        { name: "VS Code", level: 92 },
-        { name: "Debugging", level: 78 },
-      ],
+      title: "Fundamentos técnicos",
+      icon: "bi bi-diagram-3",
+      skills: ["HTTP", "JSON", "CRUD"],
+    },
+    {
+      title: "Herramientas de desarrollo",
+      icon: "bi bi-tools",
+      skills: ["Git", "GitHub", "VS Code", "Postman"],
+    },
+    {
+      title: "Build y deploy",
+      icon: "bi bi-rocket-takeoff",
+      skills: ["Vite", "Vercel"],
     },
   ];
+  
+  export const learningNow = ["Java"];
   
   export const aboutCards = [
     {

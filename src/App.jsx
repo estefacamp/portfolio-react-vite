@@ -12,12 +12,15 @@ import {
   profile,
   stats,
   skillGroups,
+  learningNow,
   aboutCards,
   education,
+  training,
   experience,
+  languages,
   projects,
   categories,
-} from "./data/Portfoliodata.js"; 
+} from "./data/Portfoliodata.js";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
