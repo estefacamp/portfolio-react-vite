@@ -17,7 +17,7 @@ import {
   experience,
   projects,
   categories,
-} from "./data/PortfolioData.js"; 
+} from "./data/Portfoliodata.js"; 
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
