@@ -1,15 +1,14 @@
+import { useState } from "react";
+
 function Skills({ skillGroups, learningNow = [] }) {
+  const [expandedGroups, setExpandedGroups] = useState({});
+
   const descriptions = {
-    Frontend:
-      "Desarrollo de interfaces claras, responsivas y orientadas a una buena experiencia de usuario.",
-    "Backend y APIs":
-      "Integración de servicios, lógica del servidor y manejo de datos para aplicaciones web.",
-    "Fundamentos técnicos":
-      "Bases clave para construir soluciones web consistentes, escalables y bien estructuradas.",
-    "Herramientas de desarrollo":
-      "Versionado, testing, organización del flujo de trabajo y productividad en el desarrollo diario.",
-    "Build y deploy":
-      "Entornos y plataformas para desarrollo local, build de proyectos y despliegue.",
+    Frontend: "Interfaces claras, responsivas y con foco en experiencia de usuario.",
+    "Backend y APIs": "Conexión de servicios, lógica del servidor y manejo de datos.",
+    "Fundamentos técnicos": "Bases clave para construir soluciones web consistentes.",
+    "Herramientas de desarrollo": "Workflow, testing, versionado y productividad diaria.",
+    "Build y deploy": "Entornos modernos para desarrollo, build y publicación.",
   };
 
   const themeMap = {
@@ -58,11 +57,18 @@ function Skills({ skillGroups, learningNow = [] }) {
     iconBg: "rgba(32, 201, 151, 0.14)",
   };
 
+  const toggleGroup = (title) => {
+    setExpandedGroups((prev) => ({
+      ...prev,
+      [title]: !prev[title],
+    }));
+  };
+
   return (
     <section id="skills" className="section-block">
       <div className="container-custom">
         <div className="section-title reveal text-center">
-          <span>Tecnologías</span>
+          <span>Skills</span>
           <h2>Stack técnico y herramientas</h2>
           <p
             className="mx-auto mt-3"
@@ -71,14 +77,18 @@ function Skills({ skillGroups, learningNow = [] }) {
               color: "rgba(255,255,255,0.72)",
             }}
           >
-            Tecnologías, herramientas y fundamentos con los que desarrollo
-            proyectos web funcionales, claros y preparados para seguir creciendo.
+            Tecnologías, herramientas y fundamentos con los que construyo
+            proyectos web funcionales, claros y listos para seguir creciendo.
           </p>
         </div>
 
         <div className="row g-4 mt-1">
           {skillGroups.map((group) => {
             const theme = themeMap[group.title] || learningTheme;
+            const isExpanded = expandedGroups[group.title];
+            const visibleSkills = isExpanded
+              ? group.skills
+              : group.skills.slice(0, 5);
 
             return (
               <div className="col-12 col-lg-6 reveal" key={group.title}>
@@ -124,9 +134,7 @@ function Skills({ skillGroups, learningNow = [] }) {
                           boxShadow: `0 0 16px ${theme.glow}`,
                         }}
                       >
-                        <i
-                          className={`${group.icon || "bi bi-code-slash"} fs-4`}
-                        ></i>
+                        <i className={`${group.icon || "bi bi-code-slash"} fs-4`}></i>
                       </div>
 
                       <div>
@@ -145,7 +153,7 @@ function Skills({ skillGroups, learningNow = [] }) {
                     </div>
 
                     <div className="d-flex flex-wrap gap-2 mt-4">
-                      {group.skills.map((skill, index) => {
+                      {visibleSkills.map((skill, index) => {
                         const label =
                           typeof skill === "string" ? skill : skill.name;
 
@@ -167,6 +175,23 @@ function Skills({ skillGroups, learningNow = [] }) {
                         );
                       })}
                     </div>
+
+                    {group.skills.length > 5 && (
+                      <button
+                        type="button"
+                        className="btn btn-sm mt-4"
+                        onClick={() => toggleGroup(group.title)}
+                        style={{
+                          border: `1px solid ${theme.chipBorder}`,
+                          color: "#fff",
+                          background: "rgba(255,255,255,0.04)",
+                          borderRadius: "999px",
+                          padding: "8px 16px",
+                        }}
+                      >
+                        {isExpanded ? "Ver menos" : "Ver más"}
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>

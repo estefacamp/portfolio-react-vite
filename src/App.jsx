@@ -1,27 +1,28 @@
 import { useEffect, useMemo, useState } from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
 import About from "./components/About";
-import Skills from "./components/Skills";
-import Resume from "./components/Resume";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
+import Skills from "./components/Skills";
+import Certifications from "./components/certifications";
 
 import {
-  profile,
-  stats,
-  skillGroups,
-  learningNow,
   aboutCards,
+  categories,
+  certifications,
   education,
-  training,
   experience,
   languages,
+  learningNow,
+  profile,
   projects,
-  categories,
-} from "./data/Portfoliodata.js";
-
+  skillGroups,
+  stats,
+  training,
+} from "./data/Portfoliodata";
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
     const saved = localStorage.getItem("portfolio-theme");
@@ -68,8 +69,14 @@ function App() {
       <main>
         <Hero profile={profile} stats={stats} />
         <About aboutCards={aboutCards} />
-        <Skills skillGroups={skillGroups} />
-        <Resume education={education} experience={experience} />
+        <Skills skillGroups={skillGroups} learningNow={learningNow} />
+        <Resume
+          education={education}
+          training={training}
+          experience={experience}
+          languages={languages}
+        />
+        <Certifications certifications={certifications} />
         <Projects
           categories={categories}
           projectFilter={projectFilter}
